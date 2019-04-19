@@ -16,6 +16,8 @@ wrap-reverse: flex items will wrap onto multiple lines from bottom to top.
 
 - CSS Tricks
 
+> Both of the above statements can be shortend to `flex-flow [direction] [wrapping mode]`
+
 ## Justify-content
 
 flex-start (default): items are packed toward the start line

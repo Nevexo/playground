@@ -1,0 +1,41 @@
+/* A navigation bar made with flexboxes */
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    /* Set some nice styling */
+    background: tomato;
+    list-style: none;
+
+    /* Push nav buttons to the right hand side of the display, flex-start could be used for left-right */
+    justify-content: flex-end;
+}
+
+.navigation a {
+    /* Configure the links */
+    color: white;
+    display: block;
+    padding: 1em;
+    background-color: tomato;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background: darkred;
+}
+
+/* Configure the navigation bar for screen sizes */
+
+@media all and (max-width: 800px) {
+    .navigation {
+        /* On medium devices, such as tablets & laptops, we'll centre the items and evenly distribute them. */
+        justify-content: space-around
+    }
+}
+
+@media all and (max-width: 500px) {
+    .navigation {
+        /* On small devices, such as mobile phones, we'll place them in a column. */
+        flex-direction: column;
+    }
+}
