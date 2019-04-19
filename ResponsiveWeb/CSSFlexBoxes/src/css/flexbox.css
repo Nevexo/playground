@@ -1,0 +1,31 @@
+
+/* Define sizes for the containers & enable flexbox on the parent*/
+.parent-container {
+    /* Div Styling only */
+    height: 300px;
+    display: flex;
+    background-color: #1fc8db;
+    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+
+    /* Enable Flex */
+    display: flex; /* Enable flexboxes. Can also be inline-flex. */ 
+    /* Set the direction that flexboxes should appear in */
+    flex-direction: row /*| row-reverse | column | column-reverse*/; 
+    /*https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg*/
+    flex-wrap: wrap /*| nowrap | wrap-reverse*/;
+    /*https://css-tricks.com/wp-content/uploads/2018/10/flex-wrap.svg*/
+    justify-content: space-around /*flex-start | flex-end | center | space-between | space-evenly*/;
+    /*https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg*/
+}
+
+.child-container {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
