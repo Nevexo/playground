@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <title>Nevexo's Enigma Machine</title>
+</head>
+
+<body>
+    <header>
+        <h1>Nevexo's Bangin' Engima Machine</h1>
+    </header>
+    <div class="container">
+        <h3>Plugboard</h3>
+        <a id="show_plugboard_button" onclick="show_plugboard()" href="#">Show Plugboard</a>
+        <div id="plugboard" hidden>
+            <a onclick="hide_plugboard()" href="#">Hide Plugboard</a>
+        </div>
+    </div>
+    <div class="container">
+        <h3>Rotors</h3>
+        <div class="rotors">
+            <div class="rotor" id="rotor_3">
+                <h3>Rotor 3</h3>
+                <p class="previous" id="rotor_3_previous">Z</p>
+                <p class="current" id="rotor_3_current">A</p>
+                <p class="next" id="rotor_3_next">B</p>
+                <a href="#" class="cycleButton" onclick="rotor_cycle(3);">Cycle Forward</a>
+            </div>
+            <div class="rotor" id="rotor_2">
+                <h3>Rotor 2</h3>
+                <p class="previous" id="rotor_2_previous">Z</p>
+                <p class="current" id="rotor_2_current">A</p>
+                <p class="next" id="rotor_2_next">B</p>
+                <a href="#" class="cycleButton" onclick="rotor_cycle(2);">Cycle Forward</a>
+            </div>
+            <div class="rotor" id="rotor_1">
+                <h3>Rotor 1</h3>
+                <p class="previous" id="rotor_1_previous">Z</p>
+                <p class="current" id="rotor_1_current">A</p>
+                <p class="next" id="rotor_1_next">B</p>
+                <a href="#" class="cycleButton" onclick="rotor_cycle(1);">Cycle Forward</a>
+            </div>
+        </div>
+        <i>Rotors will cycle forward on each key-press.</i>
+    </div>
+    <div class="container">
+        <h3>Keyboard</h3>
+        <p><i>Press keys on your keyboard & the corresponding lights will show here.</i></p>
+        <div class="keyboard" >
+            <ul>
+                <li id="key_65">A</li>
+                <li id="key_66">B</li>
+                <li id="key_67">C</li>
+                <li id="key_68">D</li>
+                <li id="key_69">E</li>
+                <li id="key_70">F</li>
+                <li id="key_71">G</li>
+                <li id="key_72">H</li>
+                <li id="key_73">I</li>
+                <li id="key_74">J</li>
+                <li id="key_75">K</li>
+                <li id="key_76">L</li>
+                <li id="key_77">M</li>
+                <li id="key_78">N</li>
+                <li id="key_79">O</li>
+                <li id="key_80">P</li>
+                <li id="key_81">Q</li>
+                <li id="key_82">R</li>
+                <li id="key_83">S</li>
+                <li id="key_84">T</li>
+                <li id="key_85">U</li>
+                <li id="key_86">V</li>
+                <li id="key_87">W</li>
+                <li id="key_88">X</li>
+                <li id="key_89">Y</li>
+                <li id="key_90">Z</li>
+            </ul>
+        <i id="machine_status" style="color: orange;">Status: Waiting for key</i>
+
+        </div>
+    </div>
+    <div class="container input">
+        <h3>Input boxes</h3>
+        <p><i>Feeling lazy? Use the boxes below to automatically run the Engima Machine.</i></p>
+    </div>
+</body>
+
+<footer>
+    <script src="js/rotors.js"></script>
+    <script src="js/features.js"></script>
+    <script src="js/rotor_control.js"></script>
+    <script src="js/keys.js"></script>
+    <script src="js/plugboard.js"></script>
+</footer>
+
+</html>

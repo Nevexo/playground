@@ -1,0 +1,59 @@
+
+h1, h2, h3, p, a, i {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    outline-style: dotted;
+    outline-color: darkgrey;
+}
+
+.rotors {
+    display: flex;
+    justify-content: center;
+}
+
+.rotors .rotor {
+    padding-right: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.rotors .rotor h3 {
+    color: tomato;
+}
+
+.rotors .rotor .previous {
+    background: grey;
+}
+
+.rotors .rotor .current {
+    background: darkgrey;
+}
+
+.rotors .rotor .next {
+    background: grey;
+}
+
+.keyboard ul {
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+}
+
+.keyboard li {
+    padding: 1.5em;
+    margin: 1em;
+    background-color: grey;
+}
