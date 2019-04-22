@@ -2,22 +2,19 @@
 
 let rotor_positions = {
     1: {
-        "previous": 25,
-        "current": 0,
-        "next": 1,
-        "top_position": 0
+        "previous": 24,
+        "current": 25,
+        "next": 0
     },
     2: {
-        "previous": 25,
-        "current": 0,
-        "next": 1,
-        "top_position": 0
+        "previous": 24,
+        "current": 25,
+        "next": 0
     },
     3: {
-        "previous": 25,
-        "current": 0,
-        "next": 1,
-        "top_position": 0
+        "previous": 24,
+        "current": 25,
+        "next": 0
     }
 }
 
@@ -41,9 +38,9 @@ const rotor_cycle = (rotor_id) => {
     console.log(`Cycle ${rotor_id} from ${current} to ${newCurrent}`)
 
     // Redraw rotor
-    id(`rotor_${rotor_id}_previous`).innerText = String.fromCharCode(characterTable[newPrevious])
-    id(`rotor_${rotor_id}_current`).innerText = String.fromCharCode(characterTable[newCurrent])
-    id(`rotor_${rotor_id}_next`).innerText = String.fromCharCode(characterTable[newNext])
+    id(`rotor_${rotor_id}_previous`).innerText = String.fromCharCode(characterTable[newPrevious]) + ` (${newPrevious})`
+    id(`rotor_${rotor_id}_current`).innerText = String.fromCharCode(characterTable[newCurrent]) + ` (${newCurrent})`
+    id(`rotor_${rotor_id}_next`).innerText = String.fromCharCode(characterTable[newNext]) + ` (${newNext})`
 }
 
 cycle_rotors = () => {
@@ -101,3 +98,7 @@ check_character = (character) => {
     return plugboardRunThrough(rPositions["stage_2"]["rotor_1"])
 
 }
+
+rotor_cycle(1)
+rotor_cycle(2)
+rotor_cycle(3)

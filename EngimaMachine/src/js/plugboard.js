@@ -11,14 +11,14 @@ const plugboardRunThrough = (character) => {
 }
 
 // Convert plugboard into codes on startup
-let track = 0
+let tracker = 0
 plugs.forEach(plugConfig => {
     let origPort = plugConfig[0]
     let newPort = plugConfig[1]
     origPort = characterTable.indexOf(origPort.charCodeAt(0))
     newPort = characterTable.indexOf(newPort.charCodeAt(0))
-    plugs[track][0] = origPort
-    plugs[track][1] = newPort
-    track++
+    plugs[tracker][0] = origPort
+    plugs[tracker][1] = newPort
+    tracker++
 })
 console.log(plugs)
